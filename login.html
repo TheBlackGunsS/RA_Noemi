@@ -11,15 +11,15 @@
      <!--form area start-->
      <div class="form">
         <!--login form start-->
-        <form class="login-form" action="" method="post">
+        <form class="login-form">
           <i class="fas fa-user-circle"></i>
-          <input class="user-input" type="text" name="" placeholder="Username" required>
-          <input class="user-input" type="password" name="" placeholder="Password" required>
+          <input id="username" class="user-input" type="text" name="" placeholder="Username" >
+          <input id="password" class="user-input" type="password" name="" placeholder="Password" >
           <div class="options-01">
             <label class="remember-me"><input type="checkbox" name="">Remember me</label>
             <a href="#">Forgot your password?</a>
           </div>
-          <input class="btn" type="submit" name="" value="LOGIN">
+          <input id="loginBtn" class="btn" type="submit" name="" value="LOGIN">
           <div class="options-02">
             <p>Not Registered? <a href="#">Create an Account</a></p>
           </div>
@@ -39,7 +39,8 @@
         <!--signup form end-->
       </div>
       <!--form area end-->
-  
+      
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
       <script type="text/javascript">
       $('.options-02 a').click(function(){
         $('form').animate({
@@ -47,5 +48,6 @@
         }, "slow");
       });
       </script>
+      <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
